@@ -1,0 +1,9 @@
+{% for products in products%}
+    <tr>
+        <td align="center">{{ products.id}}</td>
+        <td>{{ products.ten_san_pham }}</td>
+        <td>{{ products.ma_san_pham }}</td>
+
+    </tr>
+    <a href="detail/{{products.id}}">Den trang chi tiet san pham</a>
+{% endfor %}
